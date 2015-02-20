@@ -1,0 +1,411 @@
+/* Style */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow);
+@import url(http://fonts.googleapis.com/css?family=Racing+Sans+One|Numans);
+@import url(http://fonts.googleapis.com/css?family=Lekton|Montserrat|Archivo+Narrow:400,700|Oswald:400,700);
+
+::selection {
+	background: #333;
+	color: #FFF;
+}
+
+::-webkit-scrollbar {
+	width: 9px;
+}
+
+::-webkit-scrollbar-track {
+	background:#eee;
+	border: thin solid lightgray;
+	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1) inset;
+}
+
+::-webkit-scrollbar-thumb {
+	background:#999;
+	border: thin solid gray;
+}
+
+/* --------------------------
+	Body
+
+	/* --------------------------
+New font styles!
+font-family: 'Lekton', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Archivo Narrow', sans-serif;
+font-family: 'Oswald', sans-serif;
+
+----------------------------- */
+
+body {
+	font-family: 'Oswald', sans-serif;
+	background: url('../images/bg.gif');
+	padding: 0;
+	margin: 0;
+	border-top: 10px solid #000;
+}
+
+h2.title
+{
+	letter-spacing:10px;
+}
+
+/* --------------------------
+	Container
+----------------------------- */
+
+.container {
+	width: 960px;
+	margin: 10px auto;
+	-webkit-transform: translateZ(0);
+	/*background: #FFF url('picture.jpg') no-repeat center top; 
+	margin: 0 auto; 
+	height:'your-img-size'; */}
+
+}
+
+a {
+	text-decoration: none;
+}
+
+/* --------------------------
+	Header
+----------------------------- */
+
+header {
+	text-align: center;
+	font-weight: 300;
+	font-size: 400%;
+}
+
+/* --------------------------
+	paragraph styles
+----------------------------- */
+
+p {
+	text-indent:50px;
+	font-family:'Lekton', sans-serif;
+	font-size: 110%;
+	margin: 0 auto 40px;
+}
+
+p.eye
+{
+text-indent: 0;
+font-size:38px; 
+font-family:helvetica;
+color:red;
+text-align:center;
+
+ }
+
+/* --------------------------
+	Footer
+----------------------------- */
+
+footer {
+	text-align: center;
+	height: 100px;
+	line-height: 100px;
+	color: gray;
+	clear: both;
+}
+
+/* --------------------------
+	Navigation
+----------------------------- */
+
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 50px 0 80px;
+	text-align: center;
+}
+
+nav ul li {
+	display: inline;
+	cursor: pointer;
+	margin-right: 10px;
+	color: #666;
+	font-style: italic;
+	font-size: 19px;
+
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-o-transition: 0.3s;
+	-ms-transition: 0.3s;
+}
+
+nav ul li:last-child {
+	margin-right: 0;
+}
+
+nav ul li:hover {
+	color: #000;
+}
+
+nav ul li:hover:after {
+	color: #bbb;
+}
+
+nav ul li:after {
+	margin-left: 10px;
+	content: '/';
+	color: #bbb;
+}
+
+nav ul li:last-child:after {
+	content: '';
+}
+
+/* --------------------------
+	Main Image Box
+----------------------------- */
+
+.work {
+	margin: 20px 0;
+}
+
+.work figure {
+	float: left;
+	margin: 20px;
+	width: 200px;
+	height: 200px;
+	background: #fff;
+	line-height: 200px;
+	-webkit-filter: sepia(0.4);
+	position: relative;
+	padding: 0 !important;
+	
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);	
+
+	transition: 0.6s;
+	-webkit-transition: 0.6s;
+	-moz-transition: 0.6s;
+	-o-transition: 0.6s;
+	-ms-transition: 0.6s;
+}
+
+.work figure a img {
+	height: 100%;
+	width: 100%;
+}
+
+.work figure dl {
+	opacity: 0;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	padding: 20px;
+	margin: 0;
+	line-height: 2.5; 
+	background: rgba(0, 0, 0, 0.8);
+	color: white;
+
+	transition: 0.6s;
+	-webkit-transition: 0.6s;
+	-moz-transition: 0.6s;
+	-o-transition: 0.6s;
+	-ms-transition: 0.6s;
+}
+
+.work figure:hover dl {
+	opacity: 1;
+}
+
+.work figure dl dt {
+	text-transform: uppercase;
+	font-family: 'Numans', sans-serif;
+	font-size: 12px;
+	margin-bottom: -16px;
+}
+
+.work figure dl dd {
+	margin-left: 0;
+}
+
+.current-li {
+	color: #000;
+}
+
+.current {
+	-webkit-filter: sepia(0) !important;
+
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
+
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.not-current {
+	-webkit-transform: scale(0.75);	
+	-moz-transform: scale(0.75);
+	-o-transform: scale(0.75);
+	-ms-transform: scale(0.75);
+	transform: scale(0.75);
+
+	-webkit-filter: grayscale(1) !important;
+}
+
+.not-current:hover dl {
+	opacity: 0 !important;
+}
+/* --------------------------
+	IMage responsive code
+
+----------------------------- */
+img.ri
+{
+	max-width: 90%;
+	top: 10%;
+	left: 10%;
+	border-radius: 3px;
+	display: block;
+	margin: 0 auto 0 auto;
+
+}
+
+img.ri.empty
+{
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+@media screen and (orientation: portrait) {
+  img.ri {
+      max-width: 90%;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  img.ri {
+      max-height: 90%;
+  }
+}
+
+
+/* --------------------------
+	Image styles
+
+----------------------------- */
+img.gall
+{
+	border: 3px solid black;
+	margin: 5px;
+	float: left;
+
+}
+
+img.refine
+{
+	border: 3px solid black;
+	margin: 5px;
+	padding: 8px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+/* --------------------------
+	OUTAPP Page Image styles
+
+----------------------------- */
+img.out
+{
+	margin: 0 auto 0 auto;
+	display: block;
+	position: relative;
+}
+
+img.brotherlogo
+{
+	margin: 80px auto 0 auto;
+}
+
+
+/* --------------------------
+	EYESEEYOU STYLES
+----------------------------- */
+#map_canvas { 
+	height: 100%;
+	width: 75%;
+	position: relative;
+	padding:0;
+	margin:50px auto 0 auto;
+
+	
+}
+
+#eyebody
+ {
+ 	background-size: 100%;
+ 	background-color: #000;
+ }
+
+
+/* --------------------------
+	Canvas STYLES
+	
+canvas.ri
+{
+	max-width: 90%;
+	top: 10%;
+	left: 10%;
+	border-radius: 3px;
+	display: block;
+	margin: 0 auto 30px auto;
+	
+
+}
+----------------------------- */
+.wrapper {
+   display: table;
+   padding: 0;
+   width: 100%;
+   height: 100%;
+   position: absolute;
+}
+ 
+.processingcontainer {
+   display: table-cell;
+   vertical-align: middle;
+}
+ 
+.canvas-container {
+   position: relative;
+   max-width: 1024px;
+   min-width: 320px;
+   margin: 0 auto;
+}
+
+#mycanvas
+{
+	width: 80%;
+	height: auto;
+	border: solid 2px;
+	border-color: #037bff;
+	padding: 5px;
+	display: block;
+	margin: 30px auto 30px auto;
+}
+
+#socmed
+{margin: 0 auto;
+position: fixed; 
+bottom:10px;right:4px;"
+}
